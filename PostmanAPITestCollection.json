@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "bruno",
+      "event": []
+    },
+    {
+      "name": "instances",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/instances/types"
+      }
+    },
+    {
+      "name": "UseInstances",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/instances"
+      }
+    },
+    {
+      "name": "Create Instance",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:8080/instances/create",
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"cloud\": \"massedcompute\", \"region\": \"us-central-1\", \"shade_instance_type\": \"A6000_plus\", \"shade_cloud\": true, \"name\": \"quickstart\" }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "DeleteInstance",
+      "event": [],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:8080/instances/delete?instanceId=\"bf3a1116-a388-46fb-9a03-3021de417a29\""
+      }
+    }
+  ],
+  "variable": []
+}
